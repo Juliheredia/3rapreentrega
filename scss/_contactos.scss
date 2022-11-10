@@ -1,0 +1,20 @@
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input, textarea { 
+    border-radius: 12px;
+    background-color: #bbb9b9de;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
