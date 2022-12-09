@@ -1,29 +1,59 @@
 .cards {
     width: 100%;
-}
-.eventos {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 0.5vw;
-    font-size: 100%;
+    .eventos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0.5vw;
+        font-size: 100%;
+        .eventos__evento-pasado {
+            border: 1px solid rgba(0, 0, 0, 0.331);
+            background-color: rgba(102, 102, 102, 0.2);
+            color: rgb(243, 234, 234);
+            padding: 5px;
+            text-align: center;
+            .eventos__evento {
+                border: 1px solid rgba(0, 0, 0, 0.331);
+                padding: 5px;
+                text-align: center;
+                .imgclientes {
+                    width: 40%;
+                    height: 40%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
 }
 
-.eventos__evento-pasado {
-    border: 1px solid rgba(0, 0, 0, 0.331);
-    background-color: rgba(102, 102, 102, 0.2);
-    color: rgb(243, 234, 234);
-    padding: 5px;
-    text-align: center;
-}
+    
 
-.eventos__evento {
-    border: 1px solid rgba(0, 0, 0, 0.331);
-    padding: 5px;
-    text-align: center;
-}
+@media screen and (min-width: 768px) {
 
-.imgclientes {
-    width: 40%;
-    height: 40%;
-    object-fit: cover;
-}
+    .cards {
+        width: 100%;
+        .eventos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 0.5vw;
+            gap: 20px;
+            font-size: 100%;
+            .eventos__evento-pasado {
+                border: 1px solid rgba(0, 0, 0, 0.331);
+                background-color: rgba(102, 102, 102, 0.2);
+                color: rgb(243, 234, 234);
+                padding: 20px;
+                text-align: center;
+                .eventos__evento {
+                    border: 1px solid rgba(0, 0, 0, 0.331);
+                    padding: 20px;
+                    text-align: center;
+                    .imgclientes {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }

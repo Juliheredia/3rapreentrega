@@ -1,15 +1,3 @@
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-input, textarea { 
-    border-radius: 12px;
-    background-color: #bbb9b9de;
-}
-
 .conteiner {
     display: flex;
     flex-direction: column;
@@ -17,4 +5,13 @@ input, textarea {
     justify-content: center;
     align-items: center;
     color: white;
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        input, textarea { 
+            border-radius: 12px;
+            background-color: #bbb9b9de;
+        }
+    }
 }
